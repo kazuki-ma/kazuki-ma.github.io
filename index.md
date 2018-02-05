@@ -1,10 +1,12 @@
 ---
 layout: default
 title: About Kazuki MATSUDA
+test: KKK
 ---
-
-Portorofio
-===========
+<header><div>
+	<h1>About <a href="https://github.com/kazuki-ma" target="_blank">Kazuki MATSUDA</a></h1>
+	<p>東京ではたらいている！</p>
+</div></header>
 
 
 Works
@@ -21,11 +23,12 @@ Works
   * Writing java(java6->java7 migration lead) on Tomcat Servlet environment, JSP(HTML, CSS, JavaScript).
   * Drive SVN -> Git migration.
 
-2015/02-(now) LINE Corporation
+2015/02-(now) Messaging App Corporation
 ------------
 
 ### 2015/02-2017/Spring
 
+* Digital Item Site Server Side Engineer.
 * Call APIs of other services and provide rendered HTML for users. 
 
 ### 2017/Spring-
@@ -39,7 +42,7 @@ Works
 
 Programinng Languages
 ===============
-* Java (Java8) 
+* Java (mainly Java8) 
   * One of [first 5 engineers Oracle Certified Java Programmer, Gold SE 7 in Japan](http://www.oracle.com/jp/education/certification/showcase-ocjp-gold-se7-1st-1901464-ja.html)
   * Maintener of [LINE BOT SDK Java](https://github.com/line/line-bot-sdk-java)  
 * HTML, CSS, JavaScript (+AltX)
@@ -50,3 +53,15 @@ Software Using/Used
 * IntelliJ / Eclipse
 * [ELK stacks](https://www.elastic.co/jp/elk-stack) for intranet data/log analysis.
 * Spring / Retrofit2-OkHttp
+
+Certifications
+===============
+* IPA - ネットワークスペシャリスト
+* IPA - データベーススペシャリスト
+* IPA - 情報セキュリティスペシャリスト / 情報処理安全確保支援士
+
+Links
+===========
+* [Facebook](https://www.facebook.com/matsuda.kazuki)
+* [Twitter @kazuki_matsuda](https://twitter.com/kazuki_matsuda)
+* [8card.net](https://8card.net/p/matsuda.kazuki)

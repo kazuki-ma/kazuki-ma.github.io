@@ -1,0 +1,55 @@
+---
+---
+html {
+	margin: 0;
+	font-family:
+		'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	padding-top: 200px;
+}
+
+body {
+	padding: 1em;
+}
+
+body > h1 {
+	margin-top: 2em;
+	border-bottom: solid 3px #ff2F37;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	a {
+		color: inherit;
+	}
+
+	> div {
+		margin: 0;
+		padding: 1em 1em;
+		border: 0;
+		color: black;
+		text-shadow: 0px 0px 5px #fff;
+		background-color: rgba(255, 255, 255, 0.8);
+		overflow:hidden;
+		height: 100%;
+
+		> h1 {
+			font-size: xx-large;
+		}
+
+		> p {
+			font-size: 150%;
+		}
+	}
+
+	height: 200px;
+	background-image: url('{{site.github.url}}/assets/header.jpeg');
+	background-size: 1024px;
+}
+
+h1 {
+	
+}
