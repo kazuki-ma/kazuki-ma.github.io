@@ -60,6 +60,17 @@ Certifications
 * IPA - データベーススペシャリスト
 * IPA - 情報セキュリティスペシャリスト / 情報処理安全確保支援士
 
+Posts
+=====
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+
 Links
 ===========
 * [Facebook](https://www.facebook.com/matsuda.kazuki)
