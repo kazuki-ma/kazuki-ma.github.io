@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/kazuki-ma/kazuki-ma.github.io#readme",
   "devDependencies": {
-    "less": "^2.7.3",
-    "less-loader": "^4.0.5"
+    "less": "~3",
+    "less-loader": "~4",
+    "webpack": "~4",
+    "ajv": ""
   }
 }
