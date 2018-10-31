@@ -59,6 +59,11 @@ Certifications
 * IPA - ネットワークスペシャリスト
 * IPA - データベーススペシャリスト
 * IPA - 情報セキュリティスペシャリスト / 情報処理安全確保支援士
+* Microsoft Certified System Administrator
+
+Good Parts
+====
+* [Working-Backwards](http://fladdict.net/blog/2012/08/amazon-product-design.html)
 
 Posts
 =====
@@ -73,6 +78,7 @@ Posts
 
 Links
 ===========
+* [Techキャリア、どう広げる？ 最短距離で理想を叶える「社内転職」のススメ](https://type.jp/et/feature/8401)
 * [Facebook](https://www.facebook.com/matsuda.kazuki)
 * [Twitter @kazuki_matsuda](https://twitter.com/kazuki_matsuda)
 * [8card.net](https://8card.net/p/matsuda.kazuki)
