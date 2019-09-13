@@ -54,7 +54,7 @@ Works
 
 Programinng Languages
 ===============
-* Java (mainly Java8) 
+* Java
   * One of [first 5 engineers Oracle Certified Java Programmer, Gold SE 7 in Japan](http://www.oracle.com/jp/education/certification/showcase-ocjp-gold-se7-1st-1901464-ja.html)
   * Maintener of [LINE BOT SDK Java](https://github.com/line/line-bot-sdk-java)  
 * HTML, CSS, JavaScript (+AltX)
