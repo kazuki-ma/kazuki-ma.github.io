@@ -23,7 +23,7 @@ Works
   * Writing java(java6->java7 migration lead) on Tomcat Servlet environment, JSP(HTML, CSS, JavaScript).
   * Drive SVN -> Git migration.
 
-2015/02-(now) Messaging App Corporation
+2015/02-2018/09 LINE Corporation.
 ------------
 
 ### 2015/02-2017/Spring
@@ -39,6 +39,18 @@ Works
 ### Other works
 * Maintener of [LINE BOT SDK Java](https://github.com/line/line-bot-sdk-java)
 * Technical Blog Entry [Spring Security + 設定ファイルで始める LINE との ID Federation](https://engineering.linecorp.com/ja/blog/detail/159)
+
+2018/10-2019/09 [Cluster, Inc.](https://cluster.mu/)
+------------
+* General server side engineer. (Golang)
+  * Design & implement IAP(In App Purchase) coin table & transaction
+  * VR event archiving server side engineering lead
+    * [過去のVRイベントを追体験できる「VRアーカイブ機能」　仮想空間「cluster」が提供 \- ITmedia NEWS](https://www.itmedia.co.jp/news/articles/1906/05/news108.html)
+    * [VRスペース「cluster」、VRイベントを繰り返し体験できるアーカイブ機能 \- CNET Japan](https://japan.cnet.com/article/35138040/)
+    * [YuNiちゃんや樋口楓ちゃん、朝ノ瑠璃ちゃんの過去ライブを体験可能に！　cluster、VR「アーカイブ機能」を正式リリース – PANORA](https://panora.tokyo/95408/)
+    * [VRプラットフォームcluster、過去の配信に“入れる”アーカイブ機能をβリリース \| MoguLive \- 「バーチャルを楽しむ」ためのエンタメメディア](https://www.moguravr.com/cluster-archive/)
+* VR contents studio engineering.
+  * Tools: NDI (Video over Ethernet), Voice over Ethernet.
 
 Programinng Languages
 ===============
