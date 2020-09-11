@@ -8,6 +8,15 @@ test: KKK
 	<p>東京ではたらいている！</p>
 </div></header>
 
+Posts
+=====
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
 
 Works
 ===========
@@ -77,15 +86,6 @@ Good Parts
 ====
 * [Working-Backwards](http://fladdict.net/blog/2012/08/amazon-product-design.html)
 
-Posts
-=====
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
 
 
 Links
