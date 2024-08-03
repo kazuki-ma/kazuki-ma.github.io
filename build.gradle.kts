@@ -1,7 +1,7 @@
 plugins {
-    id("org.jetbrains.kotlin.jvm") version "1.4.10"
+    id("org.jetbrains.kotlin.jvm") version "2.0.0"
     id("org.gradle.java-library")
-    id("org.springframework.boot") version "2.3.3.RELEASE"
+    id("org.springframework.boot") version "3.3.0"
 }
 
 apply(plugin = "io.spring.dependency-management")
