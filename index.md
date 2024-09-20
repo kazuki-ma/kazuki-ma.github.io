@@ -75,10 +75,13 @@ Works
 * Work example) Cache optimization : Introduce multi layer cache system for reducing Redis' hot key problem.
   * [1日12億以上のリクエストを処理！ LINEマンガだからできる「SREエンジニア」の仕事](https://www.green-japan.com/premium_interviews/linedigitalfrontier/interview.html) (AD)
 * [Kotlin Fest 2022](https://2022.kotlinfest.dev/) Speaker (Based on CpF; 採択率?)
-  * `::class.fixture() pattern — 拡張関数を生かした、Test Fixture 管理の紹介` <br /><iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/1f3d480960b14e3b8f37b405a23417eb" title="::class.fixture() pattern — 拡張関数を生かした、Test Fixture 管理の紹介 " allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+  * `::class.fixture() pattern — 拡張関数を生かした、Test Fixture 管理の紹介`
+  
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/1f3d480960b14e3b8f37b405a23417eb" title="::class.fixture() pattern — 拡張関数を生かした、Test Fixture 管理の紹介 " allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+
 * [Kotlin Fest 2024]() Speaker (Based on CpF; 採択率 採択率 17 / 111 = 15%)
   * [Kotlin sealed classを用いた、ユーザーターゲティングDSL（専用言語）と実環境で秒間1,000万評価を行う処理系の事例紹介](https://fortee.jp/kotlin-fest-2024/proposal/5a2b58f8-913c-4f7b-84b2-dcd359736ab9)
-  * 
+
 
 Programinng Languages
 ===============
