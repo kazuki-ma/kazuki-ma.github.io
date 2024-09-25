@@ -67,37 +67,57 @@ ref: [Techキャリア、どう広げる？ 最短距離で理想を叶える「
         * Runs massive state machine on HBase/MySQL mixed architecture for each OA x user relationships, and send message depends on each state and required schedule.
 * Trunk Based Development への Git Branching Model の修正などを実施
 
-> <div class="deck-embed js-deck-embed" style="aspect-ratio:1024/576;" data-ratio="1.7777777777777777" data-state="processed">
->    <div class="speakerdeck-embed" data-title="false" data-skip-resize="true" data-id="e7d02e9564994b2a8c9a27375736681a" data-name="Development Process Refactoring Case Study" data-ratio="1.7777777777777777" data-host="speakerdeck.com"></div>
-> </div>
-> [Development Process Refactoring Case Study - LINE Dev Day 2020](https://linedevday.linecorp.com/2020/ja/sessions/6992/)
 
+> <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/e7d02e9564994b2a8c9a27375736681a" title="Development Process Refactoring Case Study" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+>
+> > 本セッションでは、サーバーサイド開発チームにおいて実施した、プロセスの改善について紹介します。 2019年、チームをスケールさせるにあたって、一部の指標、例えばコードレビューが完了するまでの時間が悪化している事が問題になっていました。 そこで今回我々は開発プロセス、特にリポジトリの管理とレビュープロセスに注目して、改善を進めました。 なぜなら、素早いフィードバックと、小さな改善を高速に適用していくことが、開発のスループットを向上させることに繋がると考えたからです。 結果として、PR のマージまでの時間は 89 % 減少させることができました。 具体的なプロセス改善について、事例を交えながら知見を共有させて頂きます。
+>
+> [Development Process Refactoring Case Study - LINE Dev Day 2020](https://linedevday.linecorp.com/2020/ja/sessions/6992/)
 
 2022/04- Now [LINE Digital Frontier Corporation.](https://ldfcorp.com/)
 ------------
-* TechLeads.
+* TechLead.
 * Work example) Cache optimization : Introduce multi layer cache system for reducing Redis' hot key problem.
     * [1日12億以上のリクエストを処理！ LINEマンガだからできる「SREエンジニア」の仕事](https://www.green-japan.com/premium_interviews/linedigitalfrontier/interview.html) (AD)
 * [Kotlin Fest 2022](https://2022.kotlinfest.dev/) Speaker (Based on CpF; 採択率?)
-    * `::class.fixture() pattern — 拡張関数を生かした、Test Fixture 管理の紹介`
 
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/1f3d480960b14e3b8f37b405a23417eb" title="::class.fixture() pattern — 拡張関数を生かした、Test Fixture 管理の紹介 " allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+> <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/1f3d480960b14e3b8f37b405a23417eb" title="::class.fixture() pattern — 拡張関数を生かした、Test Fixture 管理の紹介 " allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+> [::class.fixture() pattern — 拡張関数を生かした、Test Fixture 管理の紹介](https://speakerdeck.com/kazukima/class-dot-fixture-pattern-kuo-zhang-guan-shu-wosheng-kasita-test-fixture-guan-li-noshao-jie)
 
-* [Kotlin Fest 2024]() Speaker (Based on CpF; 採択率 採択率 17 / 111 = 15%)
-    * [Kotlin sealed classを用いた、ユーザーターゲティングDSL（専用言語）と実環境で秒間1,000万評価を行う処理系の事例紹介](https://fortee.jp/kotlin-fest-2024/proposal/5a2b58f8-913c-4f7b-84b2-dcd359736ab9)
+* [Kotlin Fest 2024](https://www.kotlinfest.dev/kotlin-fest-2024) Speaker (Based on CpF; 採択率 採択率 17 / 111 = 15%)
+> <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/1f3d480960b14e3b8f37b405a23417eb" title="::class.fixture() pattern — 拡張関数を生かした、Test Fixture 管理の紹介 " allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+> [Kotlin sealed classを用いた、ユーザーターゲティングDSL（専用言語）と実環境で秒間1,000万評価を行う処理系の事例紹介](https://fortee.jp/kotlin-fest-2024/proposal/5a2b58f8-913c-4f7b-84b2-dcd359736ab9)
+
+* 標準的・基本的な Storage (MySQL, Redis, Elasticsearch) をなるべく理想的な形で運用し、安定的に 30,000 req/sec API を提供。
+  * MySQL / Redis を利用した HybridCache の実装と展開 - [1日12億以上のリクエストを処理！ LINEマンガだからできる「SREエンジニア」の仕事](https://www.green-japan.com/premium_interviews/linedigitalfrontier/interview.html)
+  * Elasticesarch を1級ストレージとして、MySQL Base listing からの移行を支援。
+* Embedding vector を利用した、作品リストの online re-ranking 実装。 
+* Grafana, Prometheus を利用した Monitoring（必要に応じて自分で Gauge / DistributionSummary 実装）
+* 広告・ユーザー露出制御用の Private DMP ([Data Management Platform](https://www.fujitsu.com/jp/solutions/business-technology/intelligent-data-services/digitalmarketing/column/column017.html)) の概念浸透と実装。
+  * ref: [Kotlin sealed classを用いた、ユーザーターゲティングDSL（専用言語）と実環境で秒間1,000万評価を行う処理系の事例紹介](https://fortee.jp/kotlin-fest-2024/proposal/5a2b58f8-913c-4f7b-84b2-dcd359736ab9)
 
 
-Programinng Languages
+Programming Languages
 ===============
-* Java
-    * One of [first 5 engineers Oracle Certified Java Programmer, Gold SE 7 in Japan](http://www.oracle.com/jp/education/certification/showcase-ocjp-gold-se7-1st-1901464-ja.html)
+* Java, Kotlin - 問題無く書けます
+    * One of [first 5 engineers Oracle Certified Java Programmer, Gold SE 7 in Japan](http://www.oracle.com/jp/education/certification/showcase-ocjp-gold-se7-1st-1901464-ja.html)（リンク切れ）
     * Maintener of [LINE BOT SDK Java](https://github.com/line/line-bot-sdk-java)
-* HTML, CSS, JavaScript (+AltX)
+    * Memory (GC) Issue があっても、適切なプロファイリング・ヒープダンプ分析をして修正できる。
+    * 意図しない CPU 消費も、必要があればプロファイリング（FlameGraph）から始まる修正などが可能。
+* C++ (?)
+    * 少しですが、CPU 利用効率を考慮した記述ができます。
+
+> ![img.png](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F31158%2Fac9236a5-f561-7d32-45ae-efa952848497.png?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&w=1400&fit=max&s=a7fea5b731cff4f10326b94cf180c23a)
+> 
+> cv::Mat::forEachを使った高速なピクセル操作
+> https://qiita.com/dandelion1124/items/94542d8cd7b3455e82a0
+
+とはいえメモリ管理を自分で行わなければならない言語を Production 運用する気にはなれなくなりました。
+
+* Go
+  * Cluster, Inc. で 1年プロダクション環境で利用。
+  * "[Writing An Interpreter In Go](https://interpreterbook.com/)" を邦訳（『[Go言語でつくるインタプリタ - O'Reilly](https://www.oreilly.co.jp/books/9784873118222/)』）が出る前に一通り読んで写経しました。
+
+* Kubernetes Manifest - 所属企業社内ツールおよび一部本番環境でも利用したことがあり、一通りの運用（Manifest 記述とオペレーション）が可能。
+* HTML, CSS, JavaScript (+AltX) - Server Side
 * etc.etc...
-
-Software Using/Used
-===============
-* IntelliJ / Eclipse
-* [ELK stacks](https://www.elastic.co/jp/elk-stack) for intranet data/log analysis.
-* Spring / Retrofit2-OkHttp
-
