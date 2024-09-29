@@ -1,6 +1,6 @@
 Note: available as https://kazuki-ma.github.io/cv.html.
 
-Chronological history
+履歴 / Chronological history
 ==============
 
 * 2006-04 - 2010-03 / Studied Science at Kyoto University.
@@ -15,7 +15,7 @@ Chronological history
 [//www.facebook.com/matsuda.kazuki/about_work_and_education](https://www.facebook.com/matsuda.kazuki/about_work_and_education)
 
 
-Certifications
+資格 / Certifications
 ===============
 * IPA - ネットワークスペシャリスト
 * IPA - データベーススペシャリスト
@@ -25,71 +25,8 @@ Certifications
 * etc.
 
 
-Work history
+職歴 / Work history
 ===============
-
-2012/03-2012/12 Sony Global Solutions
------------
-* Supply Chain Management SE
-
-2013/01-2015/01 JustSystems
-------------
-* Full stack engineer & Product Owner of [GDMS](https://www.justsystems.com/jp/products/gdms/).
-    * [Working Backwards](https://www.wantedly.com/companies/toppan_dxd_ict/post_articles/501129) を全社で推進しており、新バージョンリリースの Press-Release （のイメージ）を書く部分から担当。
-    * java6->java7 migration lead on Tomcat Servlet environment, JSP(HTML, CSS, JavaScript).
-    * SVN -> Git migration lead.
-
-2015/02-2018/09 LINE Corporation.
-------------
-
-### 2015/02-2017/Spring
-
-* Lead engineer of [LINE STORE //store.line.me](https://store.line.me).  
-  * Digital Item EC Site / Server Side Engineer.
-
-Achievements
-----
-* 社内各種 Microservice / Platform との API 連携。
-* REST, Thrift, Thrift Web, Google Tag Manager (GTM) and Google Analytics,
-
-### 2017/Spring-2018/09
-
-* B2B BizDev and Technical Consultant of O2O (Online to Offline) Division, Manager.
-
-ref: [Techキャリア、どう広げる？ 最短距離で理想を叶える「社内転職」のススメ](https://type.jp/et/feature/8401/)
-
-* 全社データ分析基盤上での ETL 設計 ~ Sales へのレポート設計など。  
-* 特許：[【課題】実店舗で取引を行ったユーザの情報を比較的容易に取得することができる情報処理方法、情報処理装置、及びプログラム](https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201903006032658084)
-
-### Other works
-* Maintainer of [LINE BOT SDK Java](https://github.com/line/line-bot-sdk-java)
-* Technical Blog Entry [Spring Security + 設定ファイルで始める LINE との ID Federation](https://engineering.linecorp.com/ja/blog/detail/159)
-
-2018/10-2019/09 [Cluster, Inc.](https://cluster.mu/)
-------------
-* General server side engineer. (Golang)
-    * Design & implement IAP(In App Purchase) coin table & transaction
-    * VR event archiving server side engineering lead
-        * [過去のVRイベントを追体験できる「VRアーカイブ機能」　仮想空間「cluster」が提供 \- ITmedia NEWS](https://www.itmedia.co.jp/news/articles/1906/05/news108.html)
-        * [VRスペース「cluster」、VRイベントを繰り返し体験できるアーカイブ機能 \- CNET Japan](https://japan.cnet.com/article/35138040/)
-        * [YuNiちゃんや樋口楓ちゃん、朝ノ瑠璃ちゃんの過去ライブを体験可能に！　cluster、VR「アーカイブ機能」を正式リリース – PANORA](https://panora.tokyo/95408/)
-        * [VRプラットフォームcluster、過去の配信に“入れる”アーカイブ機能をβリリース \| MoguLive \- 「バーチャルを楽しむ」ためのエンタメメディア](https://www.moguravr.com/cluster-archive/)
-* VR contents studio engineering.
-    * Tools: NDI (Video over Ethernet), Voice over Ethernet, Motion Capture, VIVE.
-
-2019/10-2020/03 [LINE Corporation.](https://linecorp.com/)
-------------
-* Senior Software Engineer at LINE's Official Account (B2B2C Ad Platform).
-    * Leads [ステップ配信](https://www.lycbiz.com/jp/manual/OfficialAccountManager/step-message/) platform.
-        * Runs massive state machine on HBase/MySQL mixed architecture for each OA x user relationships, and send message depends on each state and required schedule.
-* Trunk Based Development への Git Branching Model の修正などを実施
-
-
-> <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/e7d02e9564994b2a8c9a27375736681a" title="Development Process Refactoring Case Study" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
->
-> > 本セッションでは、サーバーサイド開発チームにおいて実施した、プロセスの改善について紹介します。 2019年、チームをスケールさせるにあたって、一部の指標、例えばコードレビューが完了するまでの時間が悪化している事が問題になっていました。 そこで今回我々は開発プロセス、特にリポジトリの管理とレビュープロセスに注目して、改善を進めました。 なぜなら、素早いフィードバックと、小さな改善を高速に適用していくことが、開発のスループットを向上させることに繋がると考えたからです。 結果として、PR のマージまでの時間は 89 % 減少させることができました。 具体的なプロセス改善について、事例を交えながら知見を共有させて頂きます。
->
-> [Development Process Refactoring Case Study - LINE Dev Day 2020](https://linedevday.linecorp.com/2020/ja/sessions/6992/)
 
 2022/04- Now [LINE Digital Frontier Corporation.](https://ldfcorp.com/)
 ------------
@@ -111,17 +48,84 @@ ref: [Techキャリア、どう広げる？ 最短距離で理想を叶える「
 > >
 > > 今回の発表は、新規作成された共通化Platform上における課題：『マーケターを初めとする全社員が、ユーザーの条件やその AND/OR/NOT の任意の組み合わせによるターゲティングを可能とする』を、
 > > Kotlin で実装した YAML ベースのユーザーターゲティングDSL（独自言語）とその処理系によって解決した事例の紹介となります。
-> > 
+> >
 > > 安定的な拡張を行うためにKotlinの型が果たす役割についても取り上げます。
 
 * 標準的・基本的な Storage (MySQL, Redis, Elasticsearch) をなるべく理想的な形で運用し、安定的に 30,000 req/sec API を提供。
-  * MySQL / Redis を利用した HybridCache の実装と展開 - [1日12億以上のリクエストを処理！ LINEマンガだからできる「SREエンジニア」の仕事](https://www.green-japan.com/premium_interviews/linedigitalfrontier/interview.html)
-  * Elasticesarch を1級ストレージとして、MySQL Base listing からの移行を支援。
-* Embedding vector を利用した、作品リストの online re-ranking 実装。 
+    * MySQL / Redis を利用した HybridCache の実装と展開 - [1日12億以上のリクエストを処理！ LINEマンガだからできる「SREエンジニア」の仕事](https://www.green-japan.com/premium_interviews/linedigitalfrontier/interview.html)
+    * Elasticesarch を1級ストレージとして、MySQL Base listing からの移行を支援。
+* Embedding vector を利用した、作品リストの online re-ranking 実装。
 * Grafana, Prometheus を利用した Monitoring（必要に応じて自分で Gauge / DistributionSummary 実装）
 * 広告・ユーザー露出制御用の Private DMP ([Data Management Platform](https://www.fujitsu.com/jp/solutions/business-technology/intelligent-data-services/digitalmarketing/column/column017.html)) の概念浸透と実装。
-  * ref: [Kotlin sealed classを用いた、ユーザーターゲティングDSL（専用言語）と実環境で秒間1,000万評価を行う処理系の事例紹介](https://fortee.jp/kotlin-fest-2024/proposal/5a2b58f8-913c-4f7b-84b2-dcd359736ab9)
+    * ref: [Kotlin sealed classを用いた、ユーザーターゲティングDSL（専用言語）と実環境で秒間1,000万評価を行う処理系の事例紹介](https://fortee.jp/kotlin-fest-2024/proposal/5a2b58f8-913c-4f7b-84b2-dcd359736ab9)
 
+
+2019/10-2020/03 [LINE Corporation.](https://linecorp.com/)
+------------
+* Senior Software Engineer at LINE's Official Account (B2B2C Ad Platform).
+    * Leads [ステップ配信](https://www.lycbiz.com/jp/manual/OfficialAccountManager/step-message/) platform.
+        * Runs massive state machine on HBase/MySQL mixed architecture for each OA x user relationships, and send message depends on each state and required schedule.
+* Trunk Based Development への Git Branching Model の修正などを実施
+
+
+> <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/e7d02e9564994b2a8c9a27375736681a" title="Development Process Refactoring Case Study" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+>
+> > 本セッションでは、サーバーサイド開発チームにおいて実施した、プロセスの改善について紹介します。 2019年、チームをスケールさせるにあたって、一部の指標、例えばコードレビューが完了するまでの時間が悪化している事が問題になっていました。 そこで今回我々は開発プロセス、特にリポジトリの管理とレビュープロセスに注目して、改善を進めました。 なぜなら、素早いフィードバックと、小さな改善を高速に適用していくことが、開発のスループットを向上させることに繋がると考えたからです。 結果として、PR のマージまでの時間は 89 % 減少させることができました。 具体的なプロセス改善について、事例を交えながら知見を共有させて頂きます。
+>
+> [Development Process Refactoring Case Study - LINE Dev Day 2020](https://linedevday.linecorp.com/2020/ja/sessions/6992/)
+
+
+2018/10-2019/09 [Cluster, Inc.](https://cluster.mu/)
+------------
+* General server side engineer. (Golang)
+    * Design & implement IAP(In App Purchase) coin table & transaction
+    * VR event archiving server side engineering lead
+        * [過去のVRイベントを追体験できる「VRアーカイブ機能」　仮想空間「cluster」が提供 \- ITmedia NEWS](https://www.itmedia.co.jp/news/articles/1906/05/news108.html)
+        * [VRスペース「cluster」、VRイベントを繰り返し体験できるアーカイブ機能 \- CNET Japan](https://japan.cnet.com/article/35138040/)
+        * [YuNiちゃんや樋口楓ちゃん、朝ノ瑠璃ちゃんの過去ライブを体験可能に！　cluster、VR「アーカイブ機能」を正式リリース – PANORA](https://panora.tokyo/95408/)
+        * [VRプラットフォームcluster、過去の配信に“入れる”アーカイブ機能をβリリース \| MoguLive \- 「バーチャルを楽しむ」ためのエンタメメディア](https://www.moguravr.com/cluster-archive/)
+* VR contents studio engineering.
+    * Tools: NDI (Video over Ethernet), Voice over Ethernet, Motion Capture, VIVE.
+
+
+2015/02-2018/09 LINE Corporation.
+------------
+
+### 2015/02-2017/Spring
+
+* Lead engineer of [LINE STORE //store.line.me](https://store.line.me).
+    * Digital Item EC Site / Server Side Engineer.
+
+
+2013/01-2015/01 JustSystems
+------------
+* Full stack engineer & Product Owner of [GDMS](https://www.justsystems.com/jp/products/gdms/).
+    * [Working Backwards](https://www.wantedly.com/companies/toppan_dxd_ict/post_articles/501129) を全社で推進しており、新バージョンリリースの Press-Release （のイメージ）を書く部分から担当。
+    * java6->java7 migration lead on Tomcat Servlet environment, JSP(HTML, CSS, JavaScript).
+    * SVN -> Git migration lead.
+
+2012/03-2012/12 Sony Global Solutions
+-----------
+* Supply Chain Management SE
+
+
+Achievements
+----
+* 社内各種 Microservice / Platform との API 連携。
+* REST, Thrift, Thrift Web, Google Tag Manager (GTM) and Google Analytics,
+
+### 2017/Spring-2018/09
+
+* B2B BizDev and Technical Consultant of O2O (Online to Offline) Division, Manager.
+
+ref: [Techキャリア、どう広げる？ 最短距離で理想を叶える「社内転職」のススメ](https://type.jp/et/feature/8401/)
+
+* 全社データ分析基盤上での ETL 設計 ~ Sales へのレポート設計など。  
+* 特許：[【課題】実店舗で取引を行ったユーザの情報を比較的容易に取得することができる情報処理方法、情報処理装置、及びプログラム](https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201903006032658084)
+
+### Other works
+* Maintainer of [LINE BOT SDK Java](https://github.com/line/line-bot-sdk-java)
+* Technical Blog Entry [Spring Security + 設定ファイルで始める LINE との ID Federation](https://engineering.linecorp.com/ja/blog/detail/159)
 
 Programming Languages
 ===============
