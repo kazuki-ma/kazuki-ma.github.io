@@ -3,10 +3,10 @@ Note: available as https://kazuki-ma.github.io/cv.html.
 Chronological history
 ==============
 
-* 2006-04 - 2010-03 / Studied Science at Kyoto University 
+* 2006-04 - 2010-03 / Studied Science at Kyoto University.
 * 2010-04 - 2012-03 / Studied Information science at Nara Institute of Science and Technology. (Master of Engineering)
-* 2012-04 - 2013-01 / Sony Global Solutions. 
-* 2013-02 - 2015-03 / Just Systems. 
+* 2012-04 - 2013-01 / Sony Global Solutions.
+* 2013-02 - 2015-03 / Just Systems.
 * 2015-03 - 2018-09 / LINE Corporation. Server side senior software engineer. Manager.
 * 2018-10 - 2019-10 / Cluster, Inc. Server side engineer of VM App and facility engineer etc. 
 * 2019-11 - 2022-03 / LINE Corporation. Server side senior software engineer.
