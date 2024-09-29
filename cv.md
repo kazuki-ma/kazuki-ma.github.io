@@ -1,3 +1,20 @@
+Note: available as https://kazuki-ma.github.io/cv.html.
+
+Chronological history
+==============
+
+* 2006-04 - 2010-03 / Studied Science at Kyoto University 
+* 2010-04 - 2012-03 / Studied Information science at Nara Institute of Science and Technology. (Master of Engineering)
+* 2012-04 - 2013-01 / Sony Global Solutions. 
+* 2013-02 - 2015-03 / Just Systems. 
+* 2015-03 - 2018-09 / LINE Corporation. Server side senior software engineer. Manager.
+* 2018-10 - 2019-10 / Cluster, Inc. Server side engineer of VM App and facility engineer etc. 
+* 2019-11 - 2022-03 / LINE Corporation. Server side senior software engineer.
+* 2023-04 - Now / LINE Digital Frontier. Server side engineer and tech lead.
+
+[//www.facebook.com/matsuda.kazuki/about_work_and_education](https://www.facebook.com/matsuda.kazuki/about_work_and_education)
+
+
 Certifications
 ===============
 * IPA - ネットワークスペシャリスト
@@ -8,7 +25,7 @@ Certifications
 * etc.
 
 
-Work
+Work history
 ===============
 
 2012/03-2012/12 Sony Global Solutions
@@ -87,6 +104,15 @@ ref: [Techキャリア、どう広げる？ 最短距離で理想を叶える「
 * [Kotlin Fest 2024](https://www.kotlinfest.dev/kotlin-fest-2024) Speaker (Based on CpF; 採択率 採択率 17 / 111 = 15%)
 > <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/1f3d480960b14e3b8f37b405a23417eb" title="::class.fixture() pattern — 拡張関数を生かした、Test Fixture 管理の紹介 " allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
 > [Kotlin sealed classを用いた、ユーザーターゲティングDSL（専用言語）と実環境で秒間1,000万評価を行う処理系の事例紹介](https://fortee.jp/kotlin-fest-2024/proposal/5a2b58f8-913c-4f7b-84b2-dcd359736ab9)
+> > サービスの体験をパーソナライズし、興味のあるコンテンツを楽しんで貰うためには、
+> > 各種クリエイティブ（バナー・ポップアップ等）のターゲティング（by 年代、性別、OS、etc）が欠かせません。
+> >
+> > 最初は個別に実装する事が多いですが、露出面nとターゲティング条件mが増えた場合、O(n x m) の実装・メンテナンスコストがかかってしまい、共通化が必要となります。
+> >
+> > 今回の発表は、新規作成された共通化Platform上における課題：『マーケターを初めとする全社員が、ユーザーの条件やその AND/OR/NOT の任意の組み合わせによるターゲティングを可能とする』を、
+> > Kotlin で実装した YAML ベースのユーザーターゲティングDSL（独自言語）とその処理系によって解決した事例の紹介となります。
+> > 
+> > 安定的な拡張を行うためにKotlinの型が果たす役割についても取り上げます。
 
 * 標準的・基本的な Storage (MySQL, Redis, Elasticsearch) をなるべく理想的な形で運用し、安定的に 30,000 req/sec API を提供。
   * MySQL / Redis を利用した HybridCache の実装と展開 - [1日12億以上のリクエストを処理！ LINEマンガだからできる「SREエンジニア」の仕事](https://www.green-japan.com/premium_interviews/linedigitalfrontier/interview.html)
@@ -105,12 +131,18 @@ Programming Languages
     * Memory (GC) Issue があっても、適切なプロファイリング・ヒープダンプ分析をして修正できる。
     * 意図しない CPU 消費も、必要があればプロファイリング（FlameGraph）から始まる修正などが可能。
 * C++ (?)
-    * 少しですが、CPU 利用効率を考慮した記述ができます。
+    * 少しですが、CPU 利用効率を考慮した記述ができます。（した）
 
 > ![img.png](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F31158%2Fac9236a5-f561-7d32-45ae-efa952848497.png?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&w=1400&fit=max&s=a7fea5b731cff4f10326b94cf180c23a)
 > 
 > cv::Mat::forEachを使った高速なピクセル操作
 > https://qiita.com/dandelion1124/items/94542d8cd7b3455e82a0
+
+> > Note that using forEach made the code about five times faster than using Naive Pixel Access or Pointer Arithmetic method.
+>
+> Parallel Pixel Access in OpenCV using forEach
+> https://learnopencv.com/parallel-pixel-access-in-opencv-using-foreach/
+
 
 とはいえメモリ管理を自分で行わなければならない言語を Production 運用する気にはなれなくなりました。
 
