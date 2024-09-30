@@ -141,12 +141,12 @@ Programming Languages
 > ![img.png](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F31158%2Fac9236a5-f561-7d32-45ae-efa952848497.png?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&w=1400&fit=max&s=a7fea5b731cff4f10326b94cf180c23a)
 > 
 > cv::Mat::forEachを使った高速なピクセル操作
-> https://qiita.com/dandelion1124/items/94542d8cd7b3455e82a0
+> [https://qiita.com/dandelion1124/items/94542d8cd7b3455e82a0](//qiita.com/dandelion1124/items/94542d8cd7b3455e82a0)
 
 > > Note that using forEach made the code about five times faster than using Naive Pixel Access or Pointer Arithmetic method.
 >
 > Parallel Pixel Access in OpenCV using forEach
-> https://learnopencv.com/parallel-pixel-access-in-opencv-using-foreach/
+> [https://learnopencv.com/parallel-pixel-access-in-opencv-using-foreach/](//learnopencv.com/parallel-pixel-access-in-opencv-using-foreach/)
 
 
 とはいえメモリ管理を自分で行わなければならない言語を Production 運用する気にはなれなくなりました。
