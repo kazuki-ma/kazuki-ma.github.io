@@ -1,4 +1,4 @@
-Note: available as https://kazuki-ma.github.io/cv.html.
+Note: available as [https://kazuki-ma.github.io/cv.html](//kazuki-ma.github.io/cv.html).
 
 履歴 / Chronological history
 ==============
@@ -39,7 +39,7 @@ Note: available as https://kazuki-ma.github.io/cv.html.
 > [::class.fixture() pattern — 拡張関数を生かした、Test Fixture 管理の紹介](https://speakerdeck.com/kazukima/class-dot-fixture-pattern-kuo-zhang-guan-shu-wosheng-kasita-test-fixture-guan-li-noshao-jie)
 
 * [Kotlin Fest 2024](https://www.kotlinfest.dev/kotlin-fest-2024) Speaker (Based on CpF; 採択率 採択率 17 / 111 = 15%)
-> <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/1f3d480960b14e3b8f37b405a23417eb" title="::class.fixture() pattern — 拡張関数を生かした、Test Fixture 管理の紹介 " allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+> <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/5de72152efc94053ac0a8e1785e3da42" title="#KotlinFest 2024 : Kotlin sealed classを用いた、ユーザーターゲティングDSL（専用言語）と実環境で秒間1,000万評価を行う処理系の事例紹介" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
 > [Kotlin sealed classを用いた、ユーザーターゲティングDSL（専用言語）と実環境で秒間1,000万評価を行う処理系の事例紹介](https://fortee.jp/kotlin-fest-2024/proposal/5a2b58f8-913c-4f7b-84b2-dcd359736ab9)
 > > サービスの体験をパーソナライズし、興味のあるコンテンツを楽しんで貰うためには、
 > > 各種クリエイティブ（バナー・ポップアップ等）のターゲティング（by 年代、性別、OS、etc）が欠かせません。
