@@ -1,28 +1,104 @@
 Note: available as [https://kazuki-ma.github.io/cv.html](//kazuki-ma.github.io/cv.html).
 
+簡単な自己紹介 / About me
+===============
+
+LINE 株式会社および LINE Digital Frontier 株式会社で、一貫してサーバーサイドエンジニアとして活動しています。
+
+主に Java/Kotlin を利用したサービスの開発・運用を行っています。
+直近では LINE マンガのサーバーサイドエンジニア / TechLead として、[1日12億以上 (3万 Request/sec 以上) のリクエストを処理する Backend を担当（安定化）させました。](https://www.green-japan.com/premium_interviews/linedigitalfrontier/interview.html)
+
+また、LINE マンガの広告露出制御用の Private DMP の概念浸透と実装を行い、広告露出制御の基盤を構築しました。
+
+Coding をする以外にも、チームを Lead / Motivate して開発プロセスの改善等も行い、[PR のマージまでの時間を 89 % 減少させるなどの実績もあります。](https://linedevday.linecorp.com/2020/ja/sessions/6992/)。
+
+所属するチーム (Unity 利用）で git-lfs filesize が大きくなったため [git lfs dedup](https://man.archlinux.org/man/extra/git-lfs/git-lfs-dedup.1.en) 機能を[提案し、実装](https://github.com/git-lfs/git-lfs/pull/3753)したり、[spring-boot-gradle-plugin が monorepo 環境化で遅いので高速化したり](https://github.com/spring-gradle-plugins/dependency-management-plugin/pull/289) もしました。
+
+
 履歴 / Chronological history
 ==============
 
-* 2006-04 - 2010-03 / Studied Science at Kyoto University.
-* 2010-04 - 2012-03 / Studied Information science at Nara Institute of Science and Technology. (Master of Engineering)
-* 2012-04 - 2013-01 / Sony Global Solutions.
-* 2013-02 - 2015-03 / Just Systems.
-* 2015-03 - 2018-09 / LINE Corporation. Server side senior software engineer. Manager.
+* 2023-04 - Now / LINE Digital Frontier. Server side senior software engineer and tech lead. - LINE Digital Frontier 株式会社。サーバーサイドシニアエンジニア、TechLead
+* 2019-11 - 2022-03 / LINE Corporation. Server side senior software engineer. - LINE 株式会社（現 LINEヤフー株式会社）。サーバーサイドシニアエンジニア
 * 2018-10 - 2019-10 / Cluster, Inc. Server side engineer of VM App and facility engineer etc. 
-* 2019-11 - 2022-03 / LINE Corporation. Server side senior software engineer.
-* 2023-04 - Now / LINE Digital Frontier. Server side engineer and tech lead.
+* 2015-03 - 2018-09 / LINE Corporation. Server side senior software engineer. Manager.
+* 2013-02 - 2015-03 / Just Systems.
+* 2012-04 - 2013-01 / Sony Global Solutions.
+* 2010-04 - 2012-03 / Studied Information science at Nara Institute of Science and Technology. (Master of Engineering)
+* 2006-04 - 2010-03 / Studied Science at Kyoto University.
 
 [//www.facebook.com/matsuda.kazuki/about_work_and_education](https://www.facebook.com/matsuda.kazuki/about_work_and_education)
 
 
 資格 / Certifications
 ===============
+* 修士（工学） - 奈良先端科学技術大学院情報処理学専攻
 * IPA - ネットワークスペシャリスト
 * IPA - データベーススペシャリスト
 * IPA - 情報セキュリティスペシャリスト / 情報処理安全確保支援士
 * IPA - システムアーキテクト
 * Microsoft Certified System Administrator
 * etc.
+
+技術スタック / Technical Stack
+===============
+
+Programming Languages
+---------------------
+* Java, Kotlin - 問題無く書けます
+    * Maintener of [LINE BOT SDK Java](https://github.com/line/line-bot-sdk-java)
+    * Memory (GC) Issue があっても、適切なプロファイリング・ヒープダンプ分析をして修正できる。
+    * 意図しない CPU 消費も、必要があればプロファイリング（FlameGraph）から始まる修正などが可能。
+* C++ (?)
+    * 少しですが、CPU 利用効率を考慮した記述ができます。（した）
+
+> ![img.png](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F31158%2Fac9236a5-f561-7d32-45ae-efa952848497.png?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&w=1400&fit=max&s=a7fea5b731cff4f10326b94cf180c23a)
+> 
+> cv::Mat::forEachを使った高速なピクセル操作
+> [https://qiita.com/dandelion1124/items/94542d8cd7b3455e82a0](//qiita.com/dandelion1124/items/94542d8cd7b3455e82a0)
+
+> > Note that using forEach made the code about five times faster than using Naive Pixel Access or Pointer Arithmetic method.
+>
+> Parallel Pixel Access in OpenCV using forEach
+> [https://learnopencv.com/parallel-pixel-access-in-opencv-using-foreach/](//learnopencv.com/parallel-pixel-access-in-opencv-using-foreach/)
+
+
+とはいえメモリ管理を自分で行わなければならない言語を Production 運用する気にはなれなくなりました。
+(GC 付きの言語が好きで、それ以外でも Rust が気になっています。)
+
+* Go
+  * Cluster, Inc. で 1年プロダクション環境で利用。
+  * "[Writing An Interpreter In Go](https://interpreterbook.com/)" を邦訳（『[Go言語でつくるインタプリタ - O'Reilly](https://www.oreilly.co.jp/books/9784873118222/)』）が出る前に一通り読んで写経しました。
+
+* Kubernetes Manifest - 所属企業社内ツールおよび一部本番環境でも利用したことがあり、一通りの運用（Manifest 記述とオペレーション）が可能。
+* HTML, CSS, JavaScript (+AltX) - Server Side
+* etc.etc...
+
+Storage
+-------
+* MySQL
+  * Clustered Index を考慮した大規模テーブル設計の実施やレビューが可能です。
+* Redis
+  * シンプルな Key Value Store としてのみ利用、Pub/Sub 利用経験はありませんが、必要に応じて実装可能です。
+  * Remote Cache (Redis) と Local Cache を利用した Multi tier cache の導入（実装）を行いました。
+* Elasticsearch
+  * 導入（self install) 経験有り。基本は as a Service 版を利用するが、Index 設計が可能。
+
+Others
+------
+* Monitoring
+  * Grafana, Prometheus
+    * 既存の Exporter が出力した Metrics の可視化・アラート設定はもちろん、
+      必要に応じてアプリケーションの要所に Gauge / DistributionSummary を実装することも可能です。
+* gRPT, Thrift
+  * Server 間通信で利用経験あり。（Server <-> App 無し、Server <-> Frontend 多少）
+* ProtocolBuffers (protobuf)
+  * gRPC で多少の利用経験がある以外に、Redis 等での Serialization Format として日常的に利用。
+* Kubernetes
+  * Manifest 記述、運用経験あり。
+* Git
+  * Trunk Based Development への移行、Branching Model の改善などを実施。
+  * git-lfs dedup 機能の提案・実装。 - https://github.com/git-lfs/git-lfs/pull/3753
 
 
 職歴 / Work history
@@ -127,34 +203,3 @@ ref: [Techキャリア、どう広げる？ 最短距離で理想を叶える「
 ### Other works
 * Maintainer of [LINE BOT SDK Java](https://github.com/line/line-bot-sdk-java)
 * Technical Blog Entry [Spring Security + 設定ファイルで始める LINE との ID Federation](https://engineering.linecorp.com/ja/blog/detail/159)
-
-Programming Languages
-===============
-* Java, Kotlin - 問題無く書けます
-    * One of [first 5 engineers Oracle Certified Java Programmer, Gold SE 7 in Japan](http://www.oracle.com/jp/education/certification/showcase-ocjp-gold-se7-1st-1901464-ja.html)（リンク切れ）
-    * Maintener of [LINE BOT SDK Java](https://github.com/line/line-bot-sdk-java)
-    * Memory (GC) Issue があっても、適切なプロファイリング・ヒープダンプ分析をして修正できる。
-    * 意図しない CPU 消費も、必要があればプロファイリング（FlameGraph）から始まる修正などが可能。
-* C++ (?)
-    * 少しですが、CPU 利用効率を考慮した記述ができます。（した）
-
-> ![img.png](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F31158%2Fac9236a5-f561-7d32-45ae-efa952848497.png?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&w=1400&fit=max&s=a7fea5b731cff4f10326b94cf180c23a)
-> 
-> cv::Mat::forEachを使った高速なピクセル操作
-> [https://qiita.com/dandelion1124/items/94542d8cd7b3455e82a0](//qiita.com/dandelion1124/items/94542d8cd7b3455e82a0)
-
-> > Note that using forEach made the code about five times faster than using Naive Pixel Access or Pointer Arithmetic method.
->
-> Parallel Pixel Access in OpenCV using forEach
-> [https://learnopencv.com/parallel-pixel-access-in-opencv-using-foreach/](//learnopencv.com/parallel-pixel-access-in-opencv-using-foreach/)
-
-
-とはいえメモリ管理を自分で行わなければならない言語を Production 運用する気にはなれなくなりました。
-
-* Go
-  * Cluster, Inc. で 1年プロダクション環境で利用。
-  * "[Writing An Interpreter In Go](https://interpreterbook.com/)" を邦訳（『[Go言語でつくるインタプリタ - O'Reilly](https://www.oreilly.co.jp/books/9784873118222/)』）が出る前に一通り読んで写経しました。
-
-* Kubernetes Manifest - 所属企業社内ツールおよび一部本番環境でも利用したことがあり、一通りの運用（Manifest 記述とオペレーション）が可能。
-* HTML, CSS, JavaScript (+AltX) - Server Side
-* etc.etc...
