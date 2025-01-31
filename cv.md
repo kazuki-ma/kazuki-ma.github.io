@@ -3,7 +3,7 @@ Note: available as [https://kazuki-ma.github.io/cv.html](//kazuki-ma.github.io/c
 簡単な自己紹介 / About me
 ===============
 
-LINE 株式会社および LINE Digital Frontier 株式会社で、一貫してサーバーサイドエンジニアとして活動しています。
+LINE 株式会社および LINE Digital Frontier 株式会社で、一貫してサーバーサイドエンジニアとして活動していました。（-2025/01)
 
 主に Java/Kotlin を利用したサービスの開発・運用を行っています。
 直近では LINE マンガのサーバーサイドエンジニア / TechLead として、[1日12億以上 (3万 Request/sec 以上) のリクエストを処理する Backend を担当（安定化）させました。](https://www.green-japan.com/premium_interviews/linedigitalfrontier/interview.html)
@@ -135,7 +135,20 @@ Others
 * Grafana, Prometheus を利用した Monitoring（必要に応じて自分で Gauge / DistributionSummary 実装）
 * 広告・ユーザー露出制御用の Private DMP ([Data Management Platform](https://www.fujitsu.com/jp/solutions/business-technology/intelligent-data-services/digitalmarketing/column/column017.html)) の概念浸透と実装。
     * ref: [Kotlin sealed classを用いた、ユーザーターゲティングDSL（専用言語）と実環境で秒間1,000万評価を行う処理系の事例紹介](https://fortee.jp/kotlin-fest-2024/proposal/5a2b58f8-913c-4f7b-84b2-dcd359736ab9)
-
+* ClickHouse 等のを利用した、大規模データの分析基盤構築。（補完用途）
+> <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/6e6d909c7a6f4e3dba03991349b8d149" title="How LINE MANGA Uses ClickHouse for Real-Time AnalysisSolving Data Integration Challenges with ClickHouse" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+> 
+> en: LINE MANGA relies on numerous MySQL servers, but faced challenges with real-time analysis. Before introducing ClickHouse, we relied on custom scripts for each analysis. This approach was difficult to develop and review, and execution was slow.
+>
+> In theory, almost all such tasks can be done with simple SQL, which could be naturally parallelized by the query engine. However, due to our vertical and horizontal sharding, this method became impossible.
+>
+> ClickHouse’s integration engine resolves this issue. It allows data stored in different MySQL locations to be joined and aggregated with simple SQL. We believe this will serve as a helpful reference for improving the developer experience, as well as a good first step towards implementing ClickHouse.
+>
+> ja: LINE MANGAでは多数のMySQLサーバーを使用していますが、リアルタイム分析に課題がありました。ClickHouseを導入する前は、各種分析に対して個別のカスタムスクリプトに依存しており、このアプローチは開発やレビューが困難で、実行速度も遅いという問題を抱えていました。
+>
+> 理論上は、ほとんどのタスクをシンプルなSQLで実行し、クエリエンジンによって自然に並列化できるはずです。しかし、垂直・水平シャーディングを行っているために、この方法では対応が不可能でした。
+>
+> ClickHouseのインテグレーションエンジンは、この問題を解決してくれます。異なるMySQL上に分散しているデータを、シンプルなSQLで結合・集約できるようになるのです。私たちはこれが、開発者の体験を向上させる上で有用な参考例となるだけでなく、ClickHouseの導入に向けた第一歩になると考えています。
 
 2019/10-2020/03 [LINE Corporation.](https://linecorp.com/)
 ------------
