@@ -17,15 +17,15 @@ Coding をする以外にも、チームを Lead / Motivate して開発プロ�
 履歴 / Chronological history
 ==============
 
-* <code>2025-02 - Now</code> / Gen-AX（ジェナックス）株式会社. Senior software engineer. (Backend)
-* <code>2023-04 - 2025-01</code> / LINE Digital Frontier. Server side senior software engineer and tech lead. - LINE Digital Frontier 株式会社。サーバーサイドシニアエンジニア、TechLead
-* <code>2019-11 - 2022-03</code> / LINE Corporation. Server side senior software engineer. - LINE 株式会社（現 LINEヤフー株式会社）。サーバーサイドシニアエンジニア
-* <code>2018-10 - 2019-10</code> / [Cluster, Inc](https://corp.cluster.mu/). Server side engineer of VR App and facility engineer etc. 
-* <code>2015-03 - 2018-09</code> / LINE Corporation. Server side senior software engineer. Manager.
-* <code>2013-02 - 2015-03</code> / Just Systems.
-* <code>2012-04 - 2013-01</code> / Sony Global Solutions.
-* <code>2010-04 - 2012-03</code> / Studied Information science at Nara Institute of Science and Technology. (Master of Engineering)
-* <code>2006-04 - 2010-03</code> / Studied Science at Kyoto University.
+* `2025-02 - Now` / Gen-AX（ジェナックス）株式会社. Senior software engineer. (Backend)
+* `2023-04 - 2025-01` / LINE Digital Frontier. Server side senior software engineer and tech lead. - LINE Digital Frontier 株式会社。サーバーサイドシニアエンジニア、TechLead
+* `2019-11 - 2022-03` / LINE Corporation. Server side senior software engineer. - LINE 株式会社（現 LINEヤフー株式会社）。サーバーサイドシニアエンジニア
+* `2018-10 - 2019-10` / [Cluster, Inc](https://corp.cluster.mu/). Server side engineer of VR App and facility engineer etc. 
+* `2015-03 - 2018-09` / LINE Corporation. Server side senior software engineer. Manager.
+* `2013-02 - 2015-03` / Just Systems.
+* `2012-04 - 2013-01` / Sony Global Solutions.
+* `2010-04 - 2012-03` / Studied Information science at Nara Institute of Science and Technology. (Master of Engineering)
+* `2006-04 - 2010-03` / Studied Science at Kyoto University.
 
 [//www.facebook.com/matsuda.kazuki/about_work_and_education](https://www.facebook.com/matsuda.kazuki/about_work_and_education)
 
