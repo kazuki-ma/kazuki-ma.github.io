@@ -3,14 +3,13 @@ Note: available as [https://kazuki-ma.github.io/cv.html](//kazuki-ma.github.io/c
 簡単な自己紹介 / About me
 ===============
 
-LINE 株式会社および LINE Digital Frontier 株式会社で、一貫してサーバーサイドエンジニアとして活動していました。（-2025/01)
+キャリアの大部分を LINE 株式会社および LINE Digital Frontier 株式会社で、一貫してサーバーサイドエンジニア (JVM) として活動していました。（-2025/01)
+現在は [Gen-AX株式会社](https://www.gen-ax.co.jp/) でサーバーサイドエンジニアとして業務を行っています。
 
-主に Java/Kotlin を利用したサービスの開発・運用を行っています。
-直近では LINE マンガのサーバーサイドエンジニア / TechLead として、[1日12億以上 (3万 Request/sec 以上) のリクエストを処理する Backend を担当（安定化）させました。](https://www.green-japan.com/premium_interviews/linedigitalfrontier/interview.html)
-
+LINE Digital Frontier 株式会社では LINE マンガのサーバーサイドエンジニア / TechLead として、[1日12億以上 (3万 Request/sec 以上) のリクエストを処理する Backend を担当（安定化）させました。](https://www.green-japan.com/premium_interviews/linedigitalfrontier/interview.html)
 また、LINE マンガの広告露出制御用の Private DMP の概念浸透と実装を行い、広告露出制御の基盤を構築しました。
 
-Coding をする以外にも、チームを Lead / Motivate して開発プロセスの改善等も行い、[PR のマージまでの時間を 89 % 減少させるなどの実績もあります。](https://linedevday.linecorp.com/2020/ja/sessions/6992/)。
+Coding をする以外にも、チームを Lead / Motivate して開発プロセスの改善等も行い、[PR のマージまでの時間を 89 % 減少させるなどの実績もあります。](https://linedevday.linecorp.com/2020/ja/sessions/6992/)
 
 所属するチーム (Unity 利用）で git-lfs filesize が大きくなったため [git lfs dedup](https://man.archlinux.org/man/extra/git-lfs/git-lfs-dedup.1.en) 機能を[提案し、実装](https://github.com/git-lfs/git-lfs/pull/3753)したり、[spring-boot-gradle-plugin が monorepo 環境化で遅いので高速化したり](https://github.com/spring-gradle-plugins/dependency-management-plugin/pull/289) もしました。
 
@@ -18,14 +17,15 @@ Coding をする以外にも、チームを Lead / Motivate して開発プロ�
 履歴 / Chronological history
 ==============
 
-* 2023-04 - Now / LINE Digital Frontier. Server side senior software engineer and tech lead. - LINE Digital Frontier 株式会社。サーバーサイドシニアエンジニア、TechLead
-* 2019-11 - 2022-03 / LINE Corporation. Server side senior software engineer. - LINE 株式会社（現 LINEヤフー株式会社）。サーバーサイドシニアエンジニア
-* 2018-10 - 2019-10 / Cluster, Inc. Server side engineer of VM App and facility engineer etc. 
-* 2015-03 - 2018-09 / LINE Corporation. Server side senior software engineer. Manager.
-* 2013-02 - 2015-03 / Just Systems.
-* 2012-04 - 2013-01 / Sony Global Solutions.
-* 2010-04 - 2012-03 / Studied Information science at Nara Institute of Science and Technology. (Master of Engineering)
-* 2006-04 - 2010-03 / Studied Science at Kyoto University.
+* <code>2025-02 - Now</code> / Gen-AX（ジェナックス）株式会社. Senior software engineer. (Backend)
+* <code>2023-04 - 2025-01</code> / LINE Digital Frontier. Server side senior software engineer and tech lead. - LINE Digital Frontier 株式会社。サーバーサイドシニアエンジニア、TechLead
+* <code>2019-11 - 2022-03</code> / LINE Corporation. Server side senior software engineer. - LINE 株式会社（現 LINEヤフー株式会社）。サーバーサイドシニアエンジニア
+* <code>2018-10 - 2019-10</code> / [Cluster, Inc](https://corp.cluster.mu/). Server side engineer of VR App and facility engineer etc. 
+* <code>2015-03 - 2018-09</code> / LINE Corporation. Server side senior software engineer. Manager.
+* <code>2013-02 - 2015-03</code> / Just Systems.
+* <code>2012-04 - 2013-01</code> / Sony Global Solutions.
+* <code>2010-04 - 2012-03</code> / Studied Information science at Nara Institute of Science and Technology. (Master of Engineering)
+* <code>2006-04 - 2010-03</code> / Studied Science at Kyoto University.
 
 [//www.facebook.com/matsuda.kazuki/about_work_and_education](https://www.facebook.com/matsuda.kazuki/about_work_and_education)
 
