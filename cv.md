@@ -17,7 +17,7 @@ Coding をする以外にも、チームを Lead / Motivate して開発プロ�
 履歴 / Chronological history
 ==============
 
-* `2025-02 - Now` / Gen-AX（ジェナックス）株式会社. Senior software engineer. (Backend)
+* `2025-02 - Now` / [Gen-AX（ジェナックス）株式会社](https://www.gen-ax.co.jp/). Senior software engineer. (Backend)
 * `2023-04 - 2025-01` / LINE Digital Frontier. Server side senior software engineer and tech lead. - LINE Digital Frontier 株式会社。サーバーサイドシニアエンジニア、TechLead
 * `2019-11 - 2022-03` / LINE Corporation. Server side senior software engineer. - LINE 株式会社（現 LINEヤフー株式会社）。サーバーサイドシニアエンジニア
 * `2018-10 - 2019-10` / [Cluster, Inc](https://corp.cluster.mu/). Server side engineer of VR App and facility engineer etc. 
