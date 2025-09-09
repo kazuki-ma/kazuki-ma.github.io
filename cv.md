@@ -104,7 +104,12 @@ Others
 職歴 / Work history
 ===============
 
-2022/04- Now [LINE Digital Frontier Corporation.](https://ldfcorp.com/)
+2025/02 - Now [Gen-AX 株式会社](https://www.gen-ax.co.jp/)
+------------
+* Senior Software Engineer.
+* Work example as Senior) 
+
+2022/04 - 2025/01 [LINE Digital Frontier Corporation.](https://ldfcorp.com/)
 ------------
 * TechLead.
 * Work example) Cache optimization : Introduce multi layer cache system for reducing Redis' hot key problem.
