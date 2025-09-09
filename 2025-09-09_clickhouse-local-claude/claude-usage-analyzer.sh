@@ -30,9 +30,10 @@ read -r -d '' INIT_SQL << EOF || true
 -- Claude Code Usage Analysis - Initialization
 -- Creates base table from JSONL files using JSONAsObject
 
--- Create deduplicated view first (following ccusage logic: message.id + requestId)
-CREATE TABLE IF NOT EXISTS claude_projects_jsonl_raw
-ENGINE = Memory
+-- Create raw table with all JSONL data (no deduplication)
+CREATE TABLE IF NOT EXISTS claude_projects_jsonl
+ENGINE = MergeTree()
+PRIMARY KEY (session_id, message_uuid)
 AS 
 SELECT 
     CAST(json.content, 'Nullable(String)') as content,
@@ -80,10 +81,8 @@ SELECT
     json as raw_json
 FROM file('$HOME/.claude/projects/*/*.jsonl', 'JSONAsObject') AS json;
 
--- Create deduplicated table using message_id + request_id as unique key
-CREATE TABLE IF NOT EXISTS claude_projects_jsonl
-ENGINE = MergeTree()
-PRIMARY KEY (session_id, message_uuid)
+-- Create deduplicated view for token usage (following ccusage logic: message.id + requestId)
+CREATE VIEW IF NOT EXISTS claude_token_usage
 AS
 WITH deduplicated AS (
     SELECT 
@@ -92,7 +91,8 @@ WITH deduplicated AS (
             PARTITION BY concat(coalesce(message_id, ''), ':', coalesce(request_id, ''))
             ORDER BY timestamp ASC
         ) as rn
-    FROM claude_projects_jsonl_raw
+    FROM claude_projects_jsonl
+    WHERE input_tokens IS NOT NULL OR output_tokens IS NOT NULL
 )
 SELECT * EXCEPT(rn)
 FROM deduplicated
@@ -157,19 +157,18 @@ LIMIT 10
 FORMAT Pretty;
 
 SELECT '' FORMAT LineAsString;
-SELECT '=== Actual Token Usage Summary ===' FORMAT LineAsString;
+SELECT '=== Actual Token Usage Summary (Deduplicated) ===' FORMAT LineAsString;
 SELECT 
     formatReadableQuantity(sum(input_tokens)) as total_input_tokens,
     formatReadableQuantity(sum(output_tokens)) as total_output_tokens,
     formatReadableQuantity(sum(cache_creation_input_tokens)) as total_cache_creation,
     formatReadableQuantity(sum(cache_read_input_tokens)) as total_cache_read,
     formatReadableQuantity(sum(input_tokens + output_tokens + cache_creation_input_tokens + cache_read_input_tokens)) as total_all_tokens
-FROM claude_projects_jsonl
-WHERE input_tokens IS NOT NULL
+FROM claude_token_usage
 FORMAT Pretty;
 
 SELECT '' FORMAT LineAsString;
-SELECT '=== Token Usage by Model ===' FORMAT LineAsString;
+SELECT '=== Token Usage by Model (Deduplicated) ===' FORMAT LineAsString;
 SELECT 
     model,
     formatReadableQuantity(sum(input_tokens)) as input,
@@ -177,20 +176,19 @@ SELECT
     formatReadableQuantity(sum(cache_creation_input_tokens)) as cache_creation,
     formatReadableQuantity(sum(cache_read_input_tokens)) as cache_read,
     formatReadableQuantity(sum(input_tokens + output_tokens + cache_creation_input_tokens + cache_read_input_tokens)) as total
-FROM claude_projects_jsonl
+FROM claude_token_usage
 WHERE model != ''
 GROUP BY model
 ORDER BY sum(input_tokens + output_tokens + cache_creation_input_tokens + cache_read_input_tokens) DESC
 FORMAT Pretty;
 
 SELECT '' FORMAT LineAsString;
-SELECT '=== Token Usage by Hour of Day ===' FORMAT LineAsString;
+SELECT '=== Token Usage by Hour of Day (Deduplicated) ===' FORMAT LineAsString;
 SELECT 
     hour,
     formatReadableQuantity(sum(input_tokens + output_tokens)) as actual_tokens,
     bar(sum(input_tokens + output_tokens), 0, 100000, 30) as usage_pattern
-FROM claude_projects_jsonl
-WHERE input_tokens IS NOT NULL
+FROM claude_token_usage
 GROUP BY hour
 ORDER BY hour
 FORMAT Pretty;
