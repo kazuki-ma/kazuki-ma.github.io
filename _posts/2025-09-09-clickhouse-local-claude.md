@@ -39,11 +39,7 @@ brew install clickhouse
 
 ## 分析スクリプト
 
-以下が作成した分析スクリプトです。10種類の異なる観点から Claude の使用状況を分析します：
-
-```bash
-{% include_relative 2025-09-09_clickhouse-local-claude/analyze-claude-usage.sh %}
-```
+作成した分析スクリプトは [`claude-usage-analyzer.sh`](/2025-09-09_clickhouse-local-claude/claude-usage-analyzer.sh) に置いています。10種類の異なる観点から Claude の使用状況を分析します。
 
 ## 実行結果の例
 

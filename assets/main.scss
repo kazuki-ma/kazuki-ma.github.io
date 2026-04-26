@@ -55,3 +55,68 @@ h1 {
 }
 
 @import "minima.scss";
+
+.article-preview {
+	display: block;
+	max-width: 720px;
+	margin: 1rem 0 1.5rem;
+	border: 1px solid #d8dee4;
+	border-radius: 8px;
+	overflow: hidden;
+	color: inherit;
+	background: #fff;
+	text-decoration: none;
+	box-shadow: 0 8px 20px rgba(31, 35, 40, 0.08);
+
+	&:hover,
+	&:focus {
+		color: inherit;
+		text-decoration: none;
+		border-color: #8c959f;
+	}
+}
+
+.article-preview__image {
+	display: block;
+	aspect-ratio: 1200 / 630;
+	background: #f6f8fa;
+	overflow: hidden;
+
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.article-preview__body {
+	display: block;
+	padding: 0.85rem 1rem 1rem;
+}
+
+.article-preview__source,
+.article-preview__title,
+.article-preview__note {
+	display: block;
+}
+
+.article-preview__source {
+	margin-bottom: 0.35rem;
+	color: #57606a;
+	font-size: 0.85rem;
+}
+
+.article-preview__title {
+	color: #24292f;
+	font-size: 1.05rem;
+	font-weight: 700;
+	line-height: 1.45;
+}
+
+.article-preview__note {
+	margin-top: 0.45rem;
+	color: #57606a;
+	font-size: 0.9rem;
+	line-height: 1.5;
+}

@@ -6,10 +6,12 @@ Note: available as [https://kazuki-ma.github.io/cv.html](//kazuki-ma.github.io/c
 キャリアの大部分を LINE 株式会社および LINE Digital Frontier 株式会社で、一貫してサーバーサイドエンジニア (JVM) として活動していました。（-2025/01)
 現在は [Gen-AX株式会社](https://www.gen-ax.co.jp/) でサーバーサイドエンジニアとして業務を行っています。
 
-TechLead として、設計・実装・レビュー・運用改善・障害対応を分断せず、一連の責務として担当してきました。
-
 LINE Digital Frontier 株式会社では LINE マンガのサーバーサイドエンジニア / TechLead として、[1日12億以上 (3万 Request/sec 以上) のリクエストを処理する Backend を担当し、安定化させました。](https://www.green-japan.com/premium_interviews/linedigitalfrontier/interview.html)
 また、LINE マンガの広告露出制御用の Private DMP の概念浸透と実装を行い、広告露出制御の基盤を構築しました。
+
+TechLead として、設計・実装・レビュー・運用改善・障害対応を分断せず、一連の責務として担当してきました。
+また、Core Platform から見た Forward Deployed Engineer (FDE) として事業部門内の技術責任者を担い、LINE ショッピング / LINE トラベル等の新規サービスを技術面から支えた経験があります。
+分散システム、データ同期、整合性の問題について専門的に扱いつつ、現実のサービス制約や複数チームの前提知識・運用体制を踏まえて、理解・実装・運用しやすい形に落とし込むことを得意としています。
 
 Coding をする以外にも、チームを Lead / Motivate して開発プロセスの改善等も行い、[PR のマージまでの時間を 89 % 減少させるなどの実績もあります。](https://linedevday.linecorp.com/2020/ja/sessions/6992/)
 
@@ -97,6 +99,9 @@ Others
   * Server 間通信で利用経験あり。（Server <-> App 無し、Server <-> Frontend 多少）
 * Protocol Buffers (protobuf)
   * gRPC で多少の利用経験がある以外に、Redis 等での Serialization Format として日常的に利用。
+* Distributed systems / data synchronization
+  * MySQL replication, Change Data Capture (CDC), Kafka / Debezium を利用した変更データ同期の設計・運用経験。
+  * Shared DB, API integration, crawling, data feed, API push, message queue などの複数の連携方式を、サービス要件・運用負荷・チームの習熟度に応じて使い分ける設計が可能。
 * Kubernetes
   * Manifest 記述、運用経験あり。
 * Git
@@ -162,7 +167,22 @@ Others
 * Senior Software Engineer at LINE's Official Account (B2B2C Ad Platform).
     * Led [ステップ配信](https://www.lycbiz.com/jp/manual/OfficialAccountManager/step-message/) platform.
         * Ran massive state machine on HBase/MySQL mixed architecture for each OA x user relationship, and sent messages depending on each state and required schedule.
+    * Large scale CMS の変更データ同期を設計・説明。
+        * 22 系統の書き込み経路、50 以上の読み込み側サービス、270 超の Internal API を前提に、MySQL binlog / CDC / Debezium / Kafka による変更通知を設計。
+        * MySQL source / replica 間の replication delay を考慮し、通知を受けたサービスが更新後の状態を読めることを保証する設計に整理。
+        * Shared DB, API integration, API crawling, data feed, API push, message queue などの同期方式を、実運用の制約と複数チームの理解しやすさを踏まえて比較・説明。
 * Trunk Based Development への Git Branching Model の修正などを実施
+
+<a class="article-preview" href="https://logmi.jp/brandtopics/323212">
+  <span class="article-preview__image">
+    <img src="https://images.logmi.jp/media/article/323212/images/N58jwAoGWTq6Z3nFy1b1L7.png" alt="LINE Official Account Managerの開発担当者が教える開発の裏側">
+  </span>
+  <span class="article-preview__body">
+    <span class="article-preview__source">ログミーBusiness / LINE Developer Meetup #66</span>
+    <span class="article-preview__title">LINE Official Account Managerの開発担当者が教える開発の“裏側”</span>
+    <span class="article-preview__note">Large scale CMS を支える変更データ同期について、実運用上の分散システム課題と設計判断を説明した発表ログ</span>
+  </span>
+</a>
 
 
 > <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/e7d02e9564994b2a8c9a27375736681a" title="Development Process Refactoring Case Study" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
@@ -200,9 +220,21 @@ Achievements
 
 ### 2017/Spring-2018/09
 
-* B2B BizDev and Technical Consultant of O2O (Online to Offline) Division, Manager.
+* O2O (Online to Offline) Division, Forward Deployed Engineer (FDE) / TechLead (Manager).
+    * 社内公募制度を利用し、LINE STORE のサーバーサイド開発リードから O2O 事業室へ異動。
+    * Core Platform から見た Forward Deployed Engineer (FDE) として事業部門内の技術責任者を担い、LINE ショッピング / LINE トラベル等の新規サービスを技術面で支援。
+    * 事業部門と開発部門・協力会社の間で、要件整理、技術的な調整、サービス価値の共有を担当。
 
-ref: [Techキャリア、どう広げる？ 最短距離で理想を叶える「社内転職」のススメ](https://type.jp/et/feature/8401/)
+<a class="article-preview" href="https://type.jp/et/feature/8401/">
+  <span class="article-preview__image">
+    <img src="https://type.jp/et/feature/wp-content/uploads/2018/08/LINE04_og.png" alt="Techキャリア、どう広げる？ 最短距離で理想を叶える「社内転職」のススメ">
+  </span>
+  <span class="article-preview__body">
+    <span class="article-preview__source">エンジニアtype / 2018.10.18</span>
+    <span class="article-preview__title">Techキャリア、どう広げる？ 最短距離で理想を叶える「社内転職」のススメ</span>
+    <span class="article-preview__note">O2O 事業室での FDE / TechLead としての役割についてのインタビュー</span>
+  </span>
+</a>
 
 * 全社データ分析基盤上での ETL 設計 ~ Sales へのレポート設計など。  
 * 特許：[【課題】実店舗で取引を行ったユーザの情報を比較的容易に取得することができる情報処理方法、情報処理装置、及びプログラム](https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201903006032658084)
