@@ -122,7 +122,7 @@ FORMAT Pretty;
 -- Common queries hint
 SELECT '' FORMAT LineAsString;
 SELECT '=== Interactive Mode - Example Queries ===' FORMAT LineAsString;
-SELECT '-- Daily activity:' FORMAT LineAsString;
+SELECT '-- Daily activity (all messages):' FORMAT LineAsString;
 SELECT '-- SELECT date, count() as messages FROM claude_projects_jsonl GROUP BY date ORDER BY date DESC LIMIT 10;' FORMAT LineAsString;
 SELECT date, count() as messages FROM claude_projects_jsonl GROUP BY date ORDER BY date DESC LIMIT 10 FORMAT Pretty;
 SELECT '' FORMAT LineAsString;
@@ -191,6 +191,20 @@ SELECT
 FROM claude_token_usage
 GROUP BY hour
 ORDER BY hour
+FORMAT Pretty;
+
+SELECT '' FORMAT LineAsString;
+SELECT '=== Daily Token Usage (Deduplicated) ===' FORMAT LineAsString;
+SELECT 
+    date,
+    formatReadableQuantity(sum(input_tokens)) as input,
+    formatReadableQuantity(sum(output_tokens)) as output,
+    formatReadableQuantity(sum(cache_creation_input_tokens)) as cache_creation,
+    formatReadableQuantity(sum(cache_read_input_tokens)) as cache_read
+FROM claude_token_usage
+WHERE date >= today() - 7
+GROUP BY date
+ORDER BY date DESC
 FORMAT Pretty;
 
 SELECT '' FORMAT LineAsString;

@@ -82,9 +82,9 @@ brew install clickhouse
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━┓
 ┃ project                 ┃ branch    ┃ messages ┃ assistant_msgs ┃
 ┡━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━┩
-│ gen-ax/sandbox/kazuki   │ main      │     4811 │           2798 │
-│ gen-ax/Gen-AX_One       │ HEAD      │     4770 │           2151 │
-│ gen-ax/Gen-AX_One.build │ HEAD      │     3408 │           1732 │
+│ artemis/lunar-gateway   │ main      │     4811 │           2798 │
+│ apollo/command-module   │ HEAD      │     4770 │           2151 │
+│ apollo/lunar-lander     │ HEAD      │     3408 │           1732 │
 └─────────────────────────┴───────────┴──────────┴────────────────┘
 ```
 
