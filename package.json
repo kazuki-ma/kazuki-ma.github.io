@@ -15,11 +15,5 @@
   "bugs": {
     "url": "https://github.com/kazuki-ma/kazuki-ma.github.io/issues"
   },
-  "homepage": "https://github.com/kazuki-ma/kazuki-ma.github.io#readme",
-  "devDependencies": {
-    "ajv": "",
-    "less": "^3.12.2",
-    "less-loader": "~7",
-    "webpack": "^4.44.1"
-  }
+  "homepage": "https://github.com/kazuki-ma/kazuki-ma.github.io#readme"
 }
